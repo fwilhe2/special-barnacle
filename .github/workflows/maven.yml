@@ -18,5 +18,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 15
+    - run: |
+        java -version
+        mvn --version
     - name: Build with Maven
       run: mvn -B package --file pom.xml
